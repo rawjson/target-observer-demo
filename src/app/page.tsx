@@ -23,7 +23,7 @@ export default function Example() {
                     <Navigation />
                     {/* must use position:relative in parent for ObserveZone to work */}
                     <div className='relative w-full space-y-5'>
-                        {/* invisible component to track the target in view */}
+                        {/* add this invisible component to track the target */}
                         <ObserveZone
                             // optional height property, default is 50vh
                             height='70vh'
@@ -55,7 +55,7 @@ export default function Example() {
 }
 
 function Navigation() {
-    const inView = useInView()
+    const inView = useInView() // returns a record with boolean values
     return (
         <div className='sticky top-10 h-screen'>
             <ul className='space-y-4'>
