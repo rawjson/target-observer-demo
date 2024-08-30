@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@nav/use-in-view':
-        specifier: link:C:/Users/navni/Projects/my-npm-packages/use-in-view
-        version: link:../use-in-view
+      '@rawjson/use-in-view':
+        specifier: ^1.0.0
+        version: 1.0.0(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -187,6 +187,11 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@rawjson/use-in-view@1.0.0':
+    resolution: {integrity: sha512-xftbREMkmy5BKzpL4LXIi9ZZGtQ+nFhaFQx0Wzq1hQ4gWLCxCNr7kbUMiOUY/YFIsgpBBe3JNTOww0RQLe3O3w==}
+    peerDependencies:
+      react: ^18
 
   '@rushstack/eslint-patch@1.10.4':
     resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
@@ -1652,6 +1657,10 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@rawjson/use-in-view@1.0.0(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
 
   '@rushstack/eslint-patch@1.10.4': {}
 

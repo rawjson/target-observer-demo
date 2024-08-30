@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nav/use-in-view": "link:C:/Users/navni/Projects/my-npm-packages/use-in-view",
+    "@rawjson/use-in-view": "^1.0.0",
     "clsx": "^2.1.1",
     "next": "14.2.7",
     "react": "^18",
