@@ -5,7 +5,7 @@ import {
     InViewProvider,
     ObserveZone,
     Target
-} from '@nav/use-in-view'
+} from '@rawjson/use-in-view'
 import clsx from 'clsx'
 
 const targetIds = [
