@@ -19,7 +19,7 @@ export default function Example() {
     return (
         <InViewProvider targetIds={targetIds}>
             <div className='h-screen w-full'>
-                <div className='max-w-7xl mx-auto w-full p-10 flex gap-10'>
+                <div className='max-w-7xl mx-auto w-full p-5 flex gap-10'>
                     <Navigation />
                     {/* must use position:relative in parent for ObserveZone to work */}
                     <div className='relative w-full space-y-5'>
@@ -54,22 +54,20 @@ export default function Example() {
     )
 }
 
-const nav = Array.from(targetIds).map((targetId) => ({ targetId, href: '#' }))
-
 function Navigation() {
     const inView = useInView()
     return (
         <div className='sticky top-10 h-screen'>
             <ul className='space-y-4'>
-                {nav.map((item) => (
+                {targetIds.map((targetId) => (
                     <li
-                        key={item.targetId}
+                        key={targetId}
                         className={clsx('text-center w-32', {
                             'font-bold py-1 bg-red-500 text-white':
-                                inView[item.targetId]
+                                inView[targetId]
                         })}
                     >
-                        <a href={item.href}>{item.targetId}</a>
+                        <a href={'#' + targetId}>{targetId}</a>
                     </li>
                 ))}
             </ul>
