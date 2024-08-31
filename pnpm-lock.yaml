@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@rawjson/use-in-view':
-        specifier: ^1.0.0
-        version: 1.0.0(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -23,6 +20,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      target-observer:
+        specifier: ^1.0.0
+        version: 1.0.0(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -187,11 +187,6 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
-
-  '@rawjson/use-in-view@1.0.0':
-    resolution: {integrity: sha512-xftbREMkmy5BKzpL4LXIi9ZZGtQ+nFhaFQx0Wzq1hQ4gWLCxCNr7kbUMiOUY/YFIsgpBBe3JNTOww0RQLe3O3w==}
-    peerDependencies:
-      react: ^18
 
   '@rushstack/eslint-patch@1.10.4':
     resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
@@ -1429,6 +1424,11 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
+  target-observer@1.0.0:
+    resolution: {integrity: sha512-o2VIVW0i9phjWV49YVmwnF8YlXmz9nWtSwX6RuIaHXJDN/MuGc0nnljiE0DgFATXm79Zjbx/0WkuM31hyEjK1Q==}
+    peerDependencies:
+      react: ^18
+
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
@@ -1657,10 +1657,6 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
-
-  '@rawjson/use-in-view@1.0.0(react@18.3.1)':
-    dependencies:
-      react: 18.3.1
 
   '@rushstack/eslint-patch@1.10.4': {}
 
@@ -3148,6 +3144,10 @@ snapshots:
       - ts-node
 
   tapable@2.2.1: {}
+
+  target-observer@1.0.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   text-table@0.2.0: {}
 

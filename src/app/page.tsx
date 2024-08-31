@@ -1,11 +1,6 @@
 'use client'
 
-import {
-    useInView,
-    InViewProvider,
-    ObserveZone,
-    Target
-} from '@rawjson/use-in-view'
+import { useInView, InViewProvider, ObserveZone, Target } from 'target-observer'
 import clsx from 'clsx'
 
 const targetIds = [
@@ -25,7 +20,7 @@ export default function Example() {
                     <div className='relative w-full space-y-5'>
                         {/* add this invisible component to track the target */}
                         <ObserveZone
-                            // optional height property, default is 50vh
+                            // 5
                             height='70vh'
                             // optional className property, use only for testing
                             className='ring-4 ring-offset-8 ring-red-500/20'
