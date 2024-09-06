@@ -11,7 +11,7 @@ const targetIds = [
 ]
 export default function Example() {
     return (
-        <InViewProvider targetIds={targetIds}>
+        <InViewProvider targetIds={targetIds} firstTargetActiveOnMount={false}>
             <div style={{ height: '100vh', width: '100%' }}>
                 <div
                     style={{
